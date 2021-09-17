@@ -1,4 +1,4 @@
-from authentication.views import LandingPageView, SignupView, UserDeleteView
+from authentication.views import LandingPageView, SignupView, UserDeleteView, UserPassword, UserUpdateView
 from django.contrib import admin
 from django.urls import path
 from django.contrib.auth.views import (LoginView, LogoutView)
@@ -10,5 +10,8 @@ urlpatterns = [
     path("signup/", SignupView.as_view(), name="signup"),
     path("login/", LoginView.as_view(), name="login"),
     path("logout/", LogoutView.as_view(), name="logout"),
+    path("<int:pk>/update/", UserUpdateView.as_view(), name="user-update"),
     path("<int:pk>/delete/", UserDeleteView.as_view(), name="user-delete"),
+    path("<int:pk>/password/", UserPassword.as_view(), name="user-password"),
+
 ]

@@ -95,11 +95,12 @@
                 </div>
               </td>
               <td class="py-4 whitespace-nowrap text-right text-sm font-medium">
-                <button
-                  class="modal-open text-indigo-600 hover:text-indigo-900"
+                <a href="{% url 'user-update' user.pk %}"
+                  class="text-indigo-600 hover:text-indigo-900"
                 >
+                {% comment %} modal-open {% endcomment %}
                   Edit
-                </button>
+                </a>
               </td>
               <td
                 class="
