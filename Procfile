@@ -1,1 +1,1 @@
-web: gunicorn djauth.wsgi --log-file -
+web: gunicorn djauth.wsgi
