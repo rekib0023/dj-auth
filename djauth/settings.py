@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-2wohfl*6cb3*#ybyjh1p6+a3t#h*=6^3%2tq%fkv)#$@wz+#p-"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['djauth02.herokuapp.com', '127.0.0.1']
 
 AUTH_USER_MODEL = "authentication.User"
 
